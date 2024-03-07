@@ -3,49 +3,49 @@ LINK DO VIDEO DE APRESENTAÇÃO NO GOOGLE DRIVE:
 https://drive.google.com/file/d/1KOH9C2WVIxYA_fc4Xr5kKobxsOm_3uDa/view?usp=sharing
 
 
-Resumo do Projeto: Sistema de Gerenciamento de Clientes
-O que foi feito:
+Resumo do Projeto de Sistema de Gerenciamento de Clientes
+Implementação Atual:
+
 Backend:
 
-Configuração de um servidor web usando Node.js e o framework Express.
-Criação de rotas para a API que lidam com o cadastro e a listagem de clientes.
-Integração com o banco de dados PostgreSQL para armazenar e recuperar dados dos clientes.
-Implementação de CORS para permitir a comunicação entre diferentes origens (backend e frontend).
-Tratamento de erros básico para retornar respostas adequadas em caso de falha.
+Construído com Node.js e Express.
+Utiliza o banco de dados PostgreSQL para armazenar informações dos clientes.
+Permite cadastrar clientes e listar todos os clientes existentes.
+Utiliza o cors para permitir comunicações cross-origin, essencial para o desenvolvimento local e teste com frontend em outra origem.
 Frontend:
 
-Desenvolvimento de uma aplicação em React para interagir com o backend.
-Criação de componentes para o cadastro de novos clientes e visualização da lista de clientes.
-Implementação do envio (POST) e recebimento (GET) de dados via Axios para se comunicar com o backend.
-Estado do componente e formulários controlados para coletar e validar informações do usuário.
-O que pode ser implementado:
-Funcionalidades de Negócios:
+Desenvolvido com React.
+Contém componentes para a adição de novos clientes (CadastroCliente) e visualização da lista de clientes (ListaClientes).
+Interage com o backend por meio de requisições HTTP utilizando o Axios.
+Possíveis Extensões:
 
-Autenticação de usuários para segurança aprimorada.
-Autorização e controle de acesso baseado em papéis (RBAC).
-Histórico ou log de ações para auditoria.
-Otimização de Rotas:
+Implementar autenticação e autorização para proteger os dados dos clientes e garantir que apenas usuários autorizados possam acessar e modificar esses dados.
+Adicionar funcionalidade para editar e excluir clientes.
+Implementar o cálculo de rota otimizada (não incluso no código fornecido) para criar rotas eficientes para visitação dos clientes.
+Adicionar testes automatizados para garantir a integridade do código conforme novas funcionalidades são desenvolvidas.
+Internacionalizar o frontend para suportar múltiplos idiomas e regionalizações.
+Como Rodar o Projeto Localmente:
 
-Implementação do algoritmo para otimização das rotas de atendimento (Problema do Caixeiro Viajante - TSP).
-Uma API endpoint para calcular a rota mais eficiente a partir de um ponto de origem (0,0).
-Interface gráfica para exibir as rotas no mapa para visualização intuitiva.
-Experiência do Usuário:
+Pré-requisitos:
 
-Interface amigável e responsiva para melhorar a experiência do usuário em diferentes dispositivos.
-Feedback em tempo real durante o envio de formulários e operações de longa duração.
-Localização e internacionalização para suportar múltiplos idiomas.
-Tecnologia e Desempenho:
+Node.js (versão recomendada: 14.x ou superior)
+npm (normalmente vem com Node.js)
+PostgreSQL (versão recomendada: 13.x ou superior)
+Configuração do Banco de Dados:
 
-Uso de Websockets para atualizações em tempo real sem a necessidade de recarregar a página.
-Implementação de cache de dados no lado do servidor e/ou cliente para respostas mais rápidas.
-Otimização de consultas de banco de dados e índices para melhorar o desempenho.
-Testes e DevOps:
+Instale e configure o PostgreSQL localmente.
+Crie um banco de dados e usuário conforme necessário para o projeto.
+Setup do Backend:
 
-Testes unitários e de integração para backend e frontend.
-Pipeline de CI/CD para automação de testes e deploy.
-Monitoramento e alertas para a saúde da aplicação.
-Manutenção e Escalabilidade:
+Navegue até a pasta backend.
+Execute npm install para instalar todas as dependências.
+Crie um arquivo .env na raiz da pasta backend com a seguinte variável para configurar a conexão com o banco de dados: DATABASE_URL=postgres://USERNAME:PASSWORD@localhost:5432/DATABASE_NAME, substituindo USERNAME, PASSWORD, e DATABASE_NAME pelas suas configurações de banco de dados.
+Execute npm start para rodar o servidor.
+Setup do Frontend:
 
-Documentação completa do código e da API.
-Estratégias de escalabilidade horizontal para suportar um crescimento significativo na base de usuários.
-Recursos de administração para gerenciamento fácil da aplicação e dos dados.
+Navegue até a pasta frontend.
+Execute npm install para instalar as dependências.
+Execute npm start para iniciar o servidor de desenvolvimento do React. O aplicativo será aberto no navegador padrão.
+Observações Finais:
+
+O sistema foi projetado para ser simples e funcional, fornecendo uma base sobre a qual recursos adicionais podem ser construídos. O backend e o frontend são mantidos separadamente para facilitar a manutenção e a escalabilidade. Certifique-se de manter todas as dependências atualizadas e testar o sistema completamente após cada atualização ou adição de novo código.
